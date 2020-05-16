@@ -102,7 +102,7 @@ function execute(n) {//функция которая выполняет кома
 function tohtml() {
     $(".commands .item").each(function (index,element){
         if (index==0) return;
-        element=$(element.currentTarget)
+        element=$(element.currentTarget);
         let command=$(element).find(".command select").val();
         console.log(command);
         let comment=$(element).find(".comment ").html();
@@ -117,7 +117,7 @@ function tohtml() {
             <option value="?" ${command=="?"?"selected":""}>?</option>
             <option value="X" ${command=="X"?"selected":""}>X</option>
             <option value="!" ${command=="!"?"selected":""}>!</option></select></div>
-       <input type="number" class="number_command" value=${number_command} min="1"></input>
+       <input type="number" class="number_command" min="1" value="${number_command}">
         <div class="comment" contenteditable="true">${comment}</div>
     `;
         $(element).html(html);
