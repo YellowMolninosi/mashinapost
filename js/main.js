@@ -17,6 +17,7 @@ function render_lenta(a, b) {//функция которая рисует зад
 function init() {// функция которая обнуляет ленту
 	
 }
+
 function add_command(){//функция которая добавляет новую команду 
     let html = ``;
     html +=`<div class="item">
