@@ -15,12 +15,7 @@ function render_lenta(a, b) {//функция которая рисует зад
     $('.tape').html(html);
 }
 function init() {// функция которая обнуляет ленту
-    lenta = [];
-    for (let i = 0; i <= size; i++){
-        lenta.push ({
-            mark: false}
-        )
-    }
+	
 }
 function add_command(){//функция которая добавляет новую команду 
     let html = ``;
@@ -130,7 +125,7 @@ function tohtml() {
 
 $(function () {//jQvery функция выполняющаяся после полной загрузки страницы
 
-    // init();//опустошает ленту
+    init();//опустошает ленту
     ukazka = 0 ;//ставим указку в середину ленты
     render_lenta(ukazka-20, ukazka+20);//рисует ленту
     $('.tape').on('click', '.cel', function (e) {//вешаем событие на клик по ячейке ленты для установки/удаления метки
