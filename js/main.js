@@ -15,7 +15,7 @@ function render_lenta(a, b) {//функция которая рисует зад
     $('.tape').html(html);
 }
 function init() {// функция которая обнуляет ленту
-	
+
 }
 
 function add_command(){//функция которая добавляет новую команду 
@@ -96,11 +96,11 @@ function execute(n) {//функция которая выполняет кома
     Timer= setTimeout(execute, speed,num);//Отсроченный запуск следующей команды
 }
 function tohtml() {
+    let commands = [];
     $(".commands .item").each(function (index,element){
         if (index==0) return;
-        element=$(element.currentTarget);
+
         let command=$(element).find(".command select").val();
-        console.log(command);
         let comment=$(element).find(".comment ").html();
         let number_command=$(element).find(".number_command").val();
         let html = ``;
@@ -117,10 +117,10 @@ function tohtml() {
         <div class="comment" contenteditable="true">${comment}</div>
     `;
         $(element).html(html);
-    })
+    });
     let jsonlenta=JSON.stringify(lenta);
     let js=`lenta=$.parseJSON('${jsonlenta}');
-    render_lenta(${ukazka-20},${ukazka+20});console.log("gg")`;
+    render_lenta(${ukazka-20},${ukazka+20});`;
     $(".machine").append(`<script>${js}</script>`);
 }
 
@@ -185,7 +185,6 @@ $(function () {//jQvery функция выполняющаяся после п�
     });
     $('.btn.save').on('click', function (e) {
         tohtml();
-        console.log("ff");
         var text = $("html").html(),
             blob = new Blob([text], { type: 'text/plain' }),
             anchor = document.createElement('a');
