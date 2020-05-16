@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css" >
+</head>
+
+<body>
+<header>
+    <div class="btn">Машина Тьюринга</div>
+    <div class="btn activ">Машина Поста</div>
+    <div class="btn">Описание</div>
+</header>
+<div class="menu">
+  
+    <div class="btn save">Сохранить</div>
+    <div class="btn start">Старт</div>
+    <div class="btn stop">Стоп</div>
+    <div class="btn res">Сброс
+		<div class= "res_menu hover_menu">
+		 <div class="res_lenta" >Лента</div>
+            <div class="res_comand">Команды</div>
+            <div class="res_vsu">Всё</div>
+        </div>
+    </div>
+    <div class="btn left">Влево</div>
+    <div class="btn right">Вправо</div>
+    <div class="btn speed">Скорость
+        <div class="hover_menu">
+            <div class="slow activ" data-speed="750">Медленно</div>
+            <div class="default" data-speed="500">Нормально</div>
+            <div class="fast" data-speed="250">Быстро</div>
+        </div>
+    </div>
+</div>
+<div class="machine">
+    <div class="tape">
+
+    </div>
+    <div class="commands">
+        <div class="item">
+            <div class="number">Номер</div>
+            <div class="command">Команда</div>
+            <div class="number_command">Отсылка</div>
+            <div class="comment">Комментарий</div>
+        </div>
+        <div class="item">
+            <div class="number"></div>
+            <div class="command"><select>
+                <option value="<"><-</option>
+                <option value=">">-></option>
+                <option value="V">V</option>
+                <option value="?">?</option>
+                <option value="X">X</option>
+                <option value="!">!</option></select></div>
+            <input type="number" class="number_command" min="1"></input>
+            <div class="comment" contenteditable="true"></div>
+        </div>
+        <div class="item">
+            <div class="number"></div>
+            <div class="command"><select >
+                <option value="<"><-</option>
+                <option value=">">-></option>
+                <option value="V">V</option>
+                <option value="?">?</option>
+                <option value="X">X</option>
+                <option value="!">!</option></select></div>
+            <input type="number" class="number_command" min="1"></input>
+            <div class="comment" contenteditable="true"></div>
+        </div>
+        <div class="item">
+            <div class="number"></div>
+            <div class="command"><select>
+                <option value="<"><-</option>
+                <option value=">">-></option>
+                <option value="V">V</option>
+                <option value="?">?</option>
+                <option value="X">X</option>
+                <option value="!">!</option></select></div>
+            <input type="number" class="number_command" min="1"></input>
+            <div class="comment" contenteditable="true"></div>
+        </div>
+        <div class="item">
+            <div class="number"></div>
+            <div class="command"><select>
+                <option value="<"><-</option>
+                <option value=">">-></option>
+                <option value="V">V</option>
+                <option value="?">?</option>
+                <option value="X">X</option>
+                <option value="!">!</option></select></div>
+            <input type="number" class="number_command" min="1"></input>
+            <div class="comment" contenteditable="true"></div>
+        </div>
+    </div>
+</div>
+<div class="stocks">
+    <div class="name">Тагиев Влад</div>
+    <div class="VK"><a herf="https://vk.com/yellowmolninosi777"
+                       target="_blank">@yellowmolninosi777</a></div>
+    <div class="mail"><a herf="https://my.mail.ru/bk/vladtagiev/"
+                         target="_blank">vladtagiev@bk.ru</a></div>
+</div>
+</body>
+</html>

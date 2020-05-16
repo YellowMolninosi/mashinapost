@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+    }
+    header{
+        padding-left: 500px;
+        display: flex;
+        background-color: #4a76a8;
+        color: white;
+        font-family: cursive;
+    }
+    .btn{
+        width: 160px;
+        padding: 15px 20px;
+        cursor: pointer;
+        text-align: center;
+    }
+    .btn:hover{
+        background-color: #405981;
+        border-radius: 20px;
+    }
+    .activ{
+        box-shadow:inset 0px 0px 10px white;
+        cursor: default;
+    }
+    .activ:hover{
+        background-color: #4a76a8;
+    }
+    .menu{
+        display: flex;
+        margin: 50px 20px;
+        border: solid 1px #666;
+        border-radius: 20px;
+        width: 800px;
+        justify-content: space-between;
+    }
+    .menu .btn:hover{
+        background-color: #e4dee5;
+    }
+    .menu .hover_menu{
+        align-items: center;
+       position: absolute;
+        width: 90px;
+        padding: 15px 20px;
+        left: 0;
+        padding-top: 10px;
+        height: 0;
+        display: none;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: #e4dee5;
+    }
+    .hover_menu div {
+        text-align: center;
+        width: 90px;
+        padding: 10px 5px;
+        border-radius: 20px;
+    }
+    .hover_menu .activ{
+        box-shadow: none;
+        background-color: #f54a4f;
+    }
+    .hover_menu div:hover {
+        background-color: #f59893;
+    }
+    .menu .speed:hover .hover_menu{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .speed{
+        position: relative;
+    }
+    .machine{
+        background-color: #b7ddff;
+        width: 100%;
+        height: 70%;
+    }
+    .stocks{
+        background-color: #4a76a8;
+        display: flex;
+        justify-content: flex-end;
+        color: white;
+        padding-right: 70px;
+    }
+    .stocks div{
+        padding: 15px 10px;
+    }
+</style>
+<body>
+<header>
+    <div class="btn activ">Машина Тьюринга</div>
+    <div class="btn">Машина Поста</div>
+    <div class="btn">Описание</div>
+</header>
+<div class="menu">
+    <div class="btn">Открыть</div>
+    <div class="btn">Сохранить</div>
+    <div class="btn">Старт</div>
+    <div class="btn">Стоп</div>
+    <div class="btn">Сброс</div>
+    <div class="btn speed">Скорость
+        <div class="hover_menu">
+            <div class="slow activ">Медленно</div>
+            <div class="default">Нормально</div>
+            <div class="fast">Быстро</div>
+        </div>
+    </div>
+</div>
+<div class="machine">
+
+</div>
+<div class="stocks">
+    <div class="name">Тагиев Влад</div>
+    <div class="VK"><a herf="https://vk.com/yellowmolninosi777"
+                       target="_blank">@yellowmolninosi777</a></div>
+    <div class="mail"><a herf="https://my.mail.ru/bk/vladtagiev/"
+                         target="_blank">vladtagiev@bk.ru</a></div>
+</div>
+</body>
+</html>
