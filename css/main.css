@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     height: 100vh;
+    overflow: hidden;
 }
 header{
     padding-left: 500px;
@@ -9,7 +10,7 @@ header{
     background-color: #4a76a8;
     color: white;
     font-family: cursive;
-
+    height: 5vh;
 }
 .btn{
     width: 160px;
@@ -19,7 +20,6 @@ header{
 }
 .btn:hover{
     background-color: #405981;
-    border-radius: 20px;
 }
 .activ{
     box-shadow:inset 0px 0px 10px white;
@@ -30,11 +30,12 @@ header{
 }
 .menu{
     display: flex;
-    margin: 50px 20px;
+    margin: 5vh 20px;
     border: solid 1px #666;
     border-radius: 20px;
     width: 800px;
     justify-content: space-between;
+    height: 5vh;
 }
 .menu .btn:hover{
     background-color: #e4dee5;
@@ -76,7 +77,10 @@ header{
 .speed{
     position: relative;
     width: 300px;
+}
 
+.speed:hover{
+    box-shadow: 0px 4px 4px gray;
 }
 .menu .res:hover .res_menu{
     height: auto;
@@ -87,6 +91,9 @@ header{
     position: relative;
     width: 300px;
 
+}
+.res:hover{
+    box-shadow: 0px 4px 4px gray;
 }
 .menu .res_menu{
     align-items: center;
@@ -114,10 +121,16 @@ header{
 .res_menu div:hover {
     background-color: #f59893;
 }
-.machine{
 
+.zadacha{
+    width:100%;
+    border:solid 1px;
+    height:100px;
+    overflow-y: auto;
+}
+.machine{
     width: 100%;
-    height: 70%;
+    height: 75%;
 }
 .stocks{
     background-color: #4a76a8;
@@ -125,6 +138,7 @@ header{
     justify-content: flex-end;
     color: white;
     padding-right: 70px;
+    height: 5vh;
 }
 .stocks div{
     padding: 15px 10px;
@@ -134,10 +148,10 @@ header{
 }
 .cel{
     position: relative;
-  box-sizing:  border-box;
-  width: 40px;
-  height: 40px;
-  border: solid 1px black;
+    box-sizing:  border-box;
+    width: 2.5vw;
+    height: 2.5vw;
+    border: solid 1px black;
 }
 .cel.active{
   border: solid 2px red;
@@ -145,8 +159,8 @@ header{
 .cel.mark:before{
   content: "V";
   text-align: center;
-  font-size: 40px;
-  line-height: 40px;
+  font-size: 2.5vw;
+  line-height: 2.5vw;
 }
 .cel:after{
     content: attr(data-id);
@@ -154,44 +168,57 @@ header{
     color: #666;
     top: 0;
     left: 0;
-    font-size: 10px;
-
+    font-size: 1vw;
 }
 .commands{
     display: flex;
     flex-direction: column;
     margin-top: 20px;
-  counter-reset: count -1;
+    counter-reset: count -1;
+    overflow-y: auto;
+    height: 75%;
+    font-size: 2vh;
+    line-height: 2vh;
 }
 .commands .item{
     display: flex;
-    height: 30px;
-
-
+    height: 5%;
+    position: relative;
     border: solid 1px #666666;
+    box-sizing: border-box;
 }
 .commands .item.run{
     background-color: greenyellow;
 }
 .commands .item div{
     border: solid 1px #bbbbbb;
-    width: 13%;
+    width: 10%;
+    text-align: center;
+}
+.commands .item input{
+    border: solid 1px #bbbbbb;
+    width: 10%;
     text-align: center;
     line-height: 30px;
 }
 .commands .item .comment{
-    width: 60%;
+    width: 70%;
 }
 .commands .item .number{
     list-style: decimal;
-
 }
 
 .commands .item .number:after{
     content: counter(count);
     counter-increment: count 1;
 }
+.commands .number:hover {
+    background-color: greenyellow;
+}
+.commands .number:hover:after {
+    content: '+';
+    text-align: center;
+}
 .commands .item:first-child .number:after{
   content: '';
-
 }

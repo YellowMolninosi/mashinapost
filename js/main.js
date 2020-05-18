@@ -97,7 +97,6 @@ function execute(n) {//функция которая выполняет кома
     Timer= setTimeout(execute, speed,num);//Отсроченный запуск следующей команды
 }
 function tohtml() { //функция сохранения
-    let commands = [];
     $(".commands .item").each(function (index,element){
         if (index==0) return;
 
@@ -195,6 +194,21 @@ $(function () {//jQvery функция выполняющаяся после п�
         anchor.dataset.downloadurl = ['text/plain', anchor.download, anchor.href].join(':');
         anchor.click();
     });
-
+    $('.commands').on('click', '.item .number', function(e){
+        let html = ``;
+        html +=`<div class="item">
+        <div class="number"></div>
+        <div class="command"><select>
+            <option value="<"><-</option>
+            <option value=">">-></option>
+            <option value="V">V</option>
+            <option value="?">?</option>
+            <option value="X">X</option>
+            <option value="!">!</option></select></div>
+       <input type="number" class="number_command" min="1"></input>
+        <div class="comment" contenteditable="true"></div>
+    </div>`;
+        $(e.currentTarget).parent().after(html);
+    });
 });
 

@@ -3,8 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <title>Справка</title>
+    <style>
+        header{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding-left: 500px;
+            display: flex;
+            background-color: #4a76a8;
+            color: white;
+            font-family: cursive;
+            height: 5vh;
+        }
+        .btn{
+            width: 160px;
+            padding: 15px 20px;
+            cursor: pointer;
+            text-align: center;
+        }
+        .btn:hover{
+            background-color: #405981;
+        }
+        .activ{
+            box-shadow:inset 0px 0px 10px white;
+            cursor: default;
+        }
+        .activ:hover{
+            background-color: #4a76a8;
+        }
+    </style>
 </head>
 <body>
+<header>
+    <a class="btn" href = 'Машина%20Поста.html' style="text-decoration: none; color:white">Машина Поста</a>
+    <div class="btn activ"  target="_blank">Справка</div>
+</header>
 <p><h2>Машина Поста</h2>Это абстрактная вычислительная машина, предложенная Эмилем Постом в 1936 году,<br> 
 создана независимо от машины Тьюринга, но сообщение о машине Поста опубликовано на несколько месяцев позднее.<br>
 Отличается от машины Тьюринга большей простотой, притом обе машины алгоритмически «эквивалентны»<br>
