@@ -34,6 +34,7 @@ function add_command(){//функция которая добавляет нов
     </div>`;
     $('.commands').append(html);
 }
+
 function execute(n) {//функция которая выполняет команду и запускает на выполнение следующую команду
     let command=$(`.item:eq(${n})`);//получаем команду под номером N
     if(!command){//проверяется существование команды 
@@ -95,7 +96,7 @@ function execute(n) {//функция которая выполняет кома
 
     Timer= setTimeout(execute, speed,num);//Отсроченный запуск следующей команды
 }
-function tohtml() {
+function tohtml() { //функция сохранения
     let commands = [];
     $(".commands .item").each(function (index,element){
         if (index==0) return;
