@@ -195,7 +195,7 @@ header{
 }
 .commands .item{
     display: flex;
-    height: 5%;
+    height: 6%;
     position: relative;
     border: solid 1px #666666;
     box-sizing: border-box;
