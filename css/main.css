@@ -83,6 +83,11 @@ header{
 
 .speed:hover{
     box-shadow: 0px 4px 4px gray;
+    border-top-right-radius: 20px;
+}
+.save:hover{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 .menu .res:hover .res_menu{
     height: auto;
