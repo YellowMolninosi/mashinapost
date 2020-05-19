@@ -37,7 +37,7 @@ header{
     border-radius: 20px;
     width: 800px;
     justify-content: space-between;
-    height: 5vh;
+    
 }
 .menu .btn:hover{
     background-color: #e4dee5;
@@ -195,7 +195,7 @@ header{
 }
 .commands .item{
     display: flex;
-    height: 6%;
+    height: 20px;
     position: relative;
     border: solid 1px #666666;
     box-sizing: border-box;
