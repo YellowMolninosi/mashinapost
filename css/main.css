@@ -2,7 +2,10 @@ body{
     margin: 0;
     padding: 0;
     height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 header{
     padding-left: 500px;
@@ -10,7 +13,6 @@ header{
     background-color: #4a76a8;
     color: white;
     font-family: cursive;
-    height: 5vh;
 }
 .btn{
     width: 160px;
@@ -130,7 +132,14 @@ header{
 }
 .machine{
     width: 100%;
-    height: 75%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.strokaadd {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 .stocks{
     background-color: #4a76a8;
@@ -138,7 +147,6 @@ header{
     justify-content: flex-end;
     color: white;
     padding-right: 70px;
-    height: 5vh;
 }
 .stocks div{
     padding: 15px 10px;
@@ -176,9 +184,9 @@ header{
     margin-top: 20px;
     counter-reset: count -1;
     overflow-y: auto;
-    height: 75%;
     font-size: 2vh;
     line-height: 2vh;
+    flex-grow: 2;
 }
 .commands .item{
     display: flex;
