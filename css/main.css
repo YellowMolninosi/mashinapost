@@ -125,7 +125,7 @@ header{
 .zadacha{
     width:100%;
     border:solid 1px;
-    height:100px;
+    flex-grow:1;
     overflow-y: auto;
 }
 .machine{
